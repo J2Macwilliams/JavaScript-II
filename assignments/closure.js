@@ -7,7 +7,27 @@ function cuisine(cuisineType){
   const ingredients1 = 'onions';
   const ingredients2 = 'spices';
   console.log(`It's a spicy hot delectable affair eating ${cuisineType} food.`)
-}
+
+
+  function menu(menuItem){
+    const bebida = 'horchata';
+    console.log(`I can eat as many ${menuItem} any day of the week. Just give me one and a cold glass of ${bebida} and I'm a happy camper!`)
+
+
+    function filling(fillingItem){
+      const ingredients3 = 'Carne Asada';
+      const ingredients4 = 'Adobo Chicken';
+      console.log(`I'll take 5 ${menuItem} and choose the ${ingredients4} as the ${fillingItem}, all seasoned with ${ingredients1} & ${ingredients2}. Thank You.`)
+      
+
+
+    }//closes the filling
+    filling('Meat');
+  }//closes the menu
+  menu('Tacos');
+};//closes the cuisine
+cuisine('Mexican');
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

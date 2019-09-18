@@ -81,18 +81,19 @@ const product = (x , y) => x * y;
 console.log(multiplyNums(3, 7, product));
 
 // ----------------------------------------------------------------------------------------
-
-// function contains(list, item, cb) {
-//   // contains checks if an item is present inside of the given array/list.
-//   // Pass true to the callback if it is, otherwise pass false.
-// return cb(list, item);
-// }
-// let checks = (list.includes(item));
 let beers = ['Corona', 'Blue Moon', 'Voodoo Ranger', 'Fresh Squeezed IPA', 'Guiness'];
 
-// console.log(contains(beers, 'Blue Moon', checks));
+function contains(list, item, cb) {
+  // contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
+return cb(list, item);
+}
+let checks = (list, item) => list.includes(item);
 
-console.log(beers.includes('Corona'));
+
+console.log(contains(beers, 'Corona', checks));
+
+
 
 /* STRETCH PROBLEM */
 

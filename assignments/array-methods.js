@@ -119,3 +119,15 @@ console.log(bigDonors);
 
 
 // Problem 3
+//Now that we are out of large Shirts, The race Director wants to know how many medium and large shirts she needs. Create an sorted array with names so she has a list.
+let runnersSmallMed = [];
+runners.filter(function(currentValue){
+  if(currentValue.shirt_size === "S" || currentValue.shirt_size === "M"){
+    return runnersSmallMed.push(`${currentValue.shirt_size}: ${currentValue.first_name} ${ currentValue.last_name}`);
+  }  ;
+});
+
+let smallMedSorted = [];
+smallMedSorted.push(runnersSmallMed.sort());
+
+console.log(smallMedSorted);
